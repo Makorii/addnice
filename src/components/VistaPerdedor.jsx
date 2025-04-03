@@ -10,6 +10,8 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 export default function VistaPerdedor() {
     return (
@@ -121,9 +123,10 @@ export default function VistaPerdedor() {
                     minWidth: "342px",
                     margin: "24px 0",
                     padding: "8px 0",
+                    fontSize: "16px",
                 }}
             >
-                Visitar la tienda 🛒
+                Visitar la tienda <FontAwesomeIcon icon={faCartShopping} />
             </Button>
         </Container>
     );

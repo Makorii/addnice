@@ -13,6 +13,8 @@ import CardMedia from "@mui/material/CardMedia";
 import { useLocation } from "react-router";
 import { useWindowSize } from "react-use";
 import Confetti from "react-confetti";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 export default function VistaGanador() {
     const { width, height } = useWindowSize();
@@ -129,9 +131,10 @@ export default function VistaGanador() {
                     minWidth: "342px",
                     margin: "24px 0",
                     padding: "8px 0",
+                    fontSize: "16px"
                 }}
             >
-                Visitar la tienda
+                Visitar la tienda <FontAwesomeIcon icon={faCartShopping} />
             </Button>
         </Container>
     );
